@@ -1,0 +1,33 @@
+/* WARKOP 612 - gaya tambahan di luar Tailwind */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:#F7F5EE}
+::-webkit-scrollbar-thumb{background:#D8D2C2;border-radius:9999px}
+.card{background:#fff;border:1px solid #EFECE4;border-radius:1rem;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.55rem 1rem;border-radius:.75rem;font-size:.75rem;font-weight:700;transition:.15s;cursor:pointer;border:1px solid transparent}
+.btn-primary{background:#1E3A2F;color:#fff}.btn-primary:hover{background:#163026}
+.btn-ghost{background:#EFECE3;color:#334155;border-color:#E3DECE}.btn-ghost:hover{background:#e6e2d6}
+.btn-danger{background:#fef2f2;color:#b91c1c;border-color:#fecaca}.btn-danger:hover{background:#fee2e2}
+.btn-sm{padding:.35rem .7rem;font-size:.7rem}
+.input{width:100%;border:1px solid #E3DECE;background:#fff;border-radius:.75rem;padding:.55rem .85rem;font-size:.85rem}
+.input:focus{outline:none;border-color:#1E3A2F;box-shadow:0 0 0 3px rgba(30,58,47,.12)}
+.lbl{display:block;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#64748b;margin-bottom:.35rem}
+table.tbl{width:100%;border-collapse:collapse;font-size:.8rem}
+table.tbl th{padding:.7rem 1rem;text-align:left;font-size:.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#64748b;background:#FAF8F3;border-bottom:1px solid #EFECE4;white-space:nowrap}
+table.tbl td{padding:.8rem 1rem;border-bottom:1px solid #F3F0E8;vertical-align:top}
+table.tbl tr:hover td{background:#FCFBF8}
+.chip{padding:.4rem .9rem;border-radius:9999px;font-size:.75rem;font-weight:700;background:#EFECE3;color:#475569;white-space:nowrap;cursor:pointer;border:1px solid transparent}
+.chip.on{background:#1E3A2F;color:#fff}
+#toast-root{position:fixed;right:1rem;bottom:1rem;z-index:80;display:flex;flex-direction:column;gap:.5rem}
+.toast{padding:.7rem 1rem;border-radius:.75rem;font-size:.8rem;font-weight:600;color:#fff;background:#1E3A2F;box-shadow:0 8px 24px rgba(0,0,0,.18);animation:tin .2s ease}
+.toast.err{background:#b91c1c}
+@keyframes tin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.modal-bg{position:fixed;inset:0;background:rgba(15,23,20,.55);display:none;align-items:center;justify-content:center;padding:1rem;z-index:70}
+.modal-bg.open{display:flex}
+.sticker{width:260px;border:2px solid #1E3A2F;border-radius:1.25rem;padding:1.25rem;text-align:center;background:#FAF7F0}
+@media print{
+  .no-print,aside,header,nav{display:none!important}
+  body{background:#fff}
+  .card{box-shadow:none;break-inside:avoid}
+  .print-only{display:block!important}
+}
+.print-only{display:none}

@@ -1,0 +1,20 @@
+﻿# Konfigurasi lokal dan rahasia
+config.php
+.env
+.env.*
+!.env.example
+
+# File dan data lokal
+uploads/*
+!uploads/.gitkeep
+
+# File sementara dan log
+*.log
+*.tmp
+
+# Pengaturan editor pribadi
+.vscode/
+
+# File sistem Windows
+Thumbs.db
+.DS_Store
